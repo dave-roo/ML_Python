@@ -16,6 +16,9 @@ print('pandas: {}'.format(pandas.__version__))
 # scikit-learn
 import sklearn
 print('sklearn: {}'.format(sklearn.__version__))
+# quandl
+import quandl
+print('quandl: {}'.format(quandl.__version__))
 
 #LIST OF COMMANDS FOR INSTALLATION
 #py -m pip install scipy
@@ -23,3 +26,4 @@ print('sklearn: {}'.format(sklearn.__version__))
 #py -m pip install matplotlb
 #py -m pip install pandas
 #py -m pip install sklearn
+#py -m pip install quandl
