@@ -1,0 +1,14 @@
+from statistics import mean
+import numpy as np
+import matplotlib.pyplot as plt
+
+xs = np.array([1,2,3,2,1], dtype=np.float64)
+ys = np.array([1,2,3,4,2], dtype=np.float64)
+
+def best_fit_slope(xs,ys):
+	m = (((mean(xs) * mean(ys)) - mean(xs*ys)) / ((mean(xs)*mean(xs)) - mean(xs*xs)))
+	return m
+
+m = best_fit_slope(xs,ys)
+
+print(m)
